@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500&display=swap" rel="stylesheet">
+    <title>Test Chart Boi!</title>
+</head>
+<body>
+  <container class="container">
+    <cards class="cards">
+        <!--Bitcoin Card-->
+        <bitcoin style="width: 30%" class="btc">
+            <card class="asset-info">
+                <div class="title">
+                    <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg" width="15%"> 
+                    <h1>Bitcoin</h1>
+                </div>
+                <div class="details">
+                    <h2 class="asset-price" id="btcPrice"></h2>
+                </div>
+            </card>
+            <canvas id="btcChart"></canvas>
+        </bitcoin>
+    
+        <!--Ethereum Card-->
+        <ethereum style="width: 30%" class="ethereum">
+            <card class="asset-info">
+                <div class="title">
+                    <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg" width="10%"> 
+                    <h1>Ethereum</h1>
+                </div>
+                <div class="details">
+                    <h2 class="asset-price" id="ethPrice"></h2>
+                </div>
+            </card>
+            <canvas id="ethereumChart"></canvas>
+        </ethereum>
+    </cards>
+  </container>
+</body>
+<script src="api.js"></script>
+</html>
