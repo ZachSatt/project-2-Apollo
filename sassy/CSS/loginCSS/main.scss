@@ -1,9 +1,3 @@
-//importing font here
-@font-face {
-    font-family:salaryMan;
-    src: url(/assets/SALARYMA.ttf)
-}
-
 //color variables here
 $colors: (
     primary: rgba(77, 77, 182, 0.714),
@@ -13,8 +7,8 @@ $colors: (
 );
 
 //other variables here
-$bg1: url(/assets/bg_1.jpg);
-$bg2:url(/assets/bg_2jpg.jpg);
+$bg1: url(../../assets/bg_1.jpg);
+$bg2:url(../../assets/bg_2jpg.jpg);
 $padding: 15px;
 $borders: 15px;
 $desktop: 840px;
