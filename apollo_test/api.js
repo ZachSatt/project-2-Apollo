@@ -1,4 +1,4 @@
-//  Calling API and modeling data for each chart
+// Calling API and modeling data for each chart
 const btcData = async () => {
     const response = await fetch('https://min-api.cryptocompare.com/data/v2/histominute?fsym=BTC&tsym=USD&limit=119&api_key=da16ad98c7abaa53a707853afacc055dd94add255154d87f20a3d3c238bc130f');
     const json = await response.json();
