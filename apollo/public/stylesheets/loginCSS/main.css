@@ -9,7 +9,7 @@ body, html {
   }
   
   body #bg {
-    background-image: url(../assets/bg_1.jpg);
+    background-image: url(../../stylesheets/assets/bg_1.jpg);
     -webkit-clip-path: polygon(100% 0, 100% 65%, 82% 100%, 0 100%, 0 0);
             clip-path: polygon(100% 0, 100% 65%, 82% 100%, 0 100%, 0 0);
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body, html {
   
   @media (min-width: 840px) {
     body #bg {
-      background-image: url(../assets/bg_2.jpg);
+      background-image: url(../../stylesheets/assets/bg_2.jpg);
       -webkit-clip-path: polygon(0 0, 78% 0, 58% 100%, 0 100%);
               clip-path: polygon(0 0, 78% 0, 58% 100%, 0 100%);
       background-size: 100%;
