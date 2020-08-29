@@ -7,8 +7,8 @@ $colors: (
 );
 
 //BG image, padding , & border variables here
-$bg1: url(../../stylesheets/assets/bg_1.jpg);
-$bg2:url(../../stylesheets/assets/bg_2.jpg);
+$bg1: url(../../stylesheets/assets/bg_5.jpg);//Mobile responsive BG
+$bg2:url(../../stylesheets/assets/bg_4.jpg);//Main BG
 $padding: 15px;
 $borders: 15px;
 $desktop: 840px;
@@ -54,7 +54,6 @@ body {
             background-image:$bg2;
             clip-path: polygon(0 0, 78% 0, 58% 100%, 0 100%);
             background-size: 100%;
-            background-color:#00051B;
         }
     }
 
