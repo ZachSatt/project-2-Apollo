@@ -5,10 +5,18 @@ const path = require("path");
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
-  app.get("/", (req, res) => {
+  app.get("/signup", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
       res.redirect("/members");
+    }
+    res.render("signup")
+  });
+
+  app.get("/signup", (req, res) => {
+    // Added this route to get Signup page to work - YI
+    if (req.user) {
+      return res.redirect("/members");
     }
     res.render("signup");
   });
