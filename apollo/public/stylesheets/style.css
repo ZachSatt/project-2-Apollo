@@ -1,0 +1,101 @@
+body {
+  font-family: 'Karma', serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background: #e8e8e8;
+}
+
+body #bg {
+  background-image: url(./assets/bg_3.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: 100%;
+}
+
+h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.25em;
+  }
+  
+  p {
+    font-family: 'Red Hat Text', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cards {
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .btc, .ethereum, .link, .dot {
+    display: grid;
+    max-width: 300px;
+    min-width: 250px;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, 60px) 1fr;
+    grid-template: 
+        "info"
+        "chart";
+    border-radius: 30px;
+  }
+  
+  .btc {
+    box-shadow: 10px 10px 20px 1px rgba(247,147,26,.15);
+    background: white;
+  }
+  
+  .ethereum {
+    box-shadow: 10px 10px 20px 1px rgba(78,56,216,.15);
+    background: white;
+  }
+
+  .link {
+    box-shadow: 10px 10px 20px 1px rgba(247,147,26,.15);
+    background: white;
+  }
+
+  .dot {
+    box-shadow: 10px 10px 20px 1px rgba(247,147,26,.15);
+    background: white;
+  }
+  .asset-info {
+    grid-area: info;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+  }
+  
+  .title {
+    display: inline-flex;
+  }
+  
+  .card h1 {
+    margin-left: 10px;
+  }
+  
+  #btcChart, #ethereumChart, #linkChart, #dotChart {
+    grid-area: chart;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: auto;
+  }

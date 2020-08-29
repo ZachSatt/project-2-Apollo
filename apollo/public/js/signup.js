@@ -15,7 +15,7 @@ $(document).ready(() => {
     if (!userData.email || !userData.password) {
       return;
     } else {
-      $.post("/api/signup", userData )
+      $.post("/api/signup", userData)
         .then(() => {
           window.location.replace("/members");
           // If there's an error, handle it by throwing up a bootstrap alert
@@ -24,7 +24,7 @@ $(document).ready(() => {
 
     }
     // If we have an email and password, run the signUpUser function
-    //signUpUser(userData.email, userData.password);
+    signUpUser(userData.email, userData.password);
     emailInput.val("");
     passwordInput.val("");
   });

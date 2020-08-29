@@ -9,7 +9,7 @@ body {
 }
 
 body #bg {
-  background-image: url(../../stylesheets/assets/bg_1.jpg);
+  background-image: url(../../stylesheets/assets/bg_5.jpg);
   -webkit-clip-path: polygon(100% 0, 100% 65%, 82% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 65%, 82% 100%, 0 100%, 0 0);
   background-repeat: no-repeat;
@@ -21,11 +21,11 @@ body #bg {
 
 @media (min-width: 840px) {
   body #bg {
-    background-image: url(../../stylesheets/assets/bg_2.jpg);
+    background-image: url(../../stylesheets/assets/bg_4.jpg);
     -webkit-clip-path: polygon(0 0, 78% 0, 58% 100%, 0 100%);
             clip-path: polygon(0 0, 78% 0, 58% 100%, 0 100%);
     background-size: 100%;
-    background-color: #00051B;
+    background-color: #03196C;
   }
 }
 
@@ -166,4 +166,4 @@ main h1 {
 main p {
   font-size: 1.4em;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=signUp.css.map */
