@@ -1,0 +1,80 @@
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/style.css" />
+</head>
+<header>
+  <!--Logo here| Debating on if we want to take this off-->
+  <h3>CRYPTODESK</h3>
+</header>
+<div id="bg">
+  <div>
+    <p>Hey *Insert Username HERE*, great news!<br>
+      Your portfolio was <code>*dynamic percentange change here*</code> today.<br>
+      Biggest gainers were *dynamic coin name change here* and *dynamic coin name change here*.
+    </p>
+  </div>
+
+  <div>
+    <h2><code>*dynamic portfolio value*</code></h2>
+    <p><code>*Monetary increase here for "today"*</code></p>
+  </div>
+  <container class="container">
+    <cards class="cards">
+      <!--Bitcoin Card-->
+      <div style="width: 30%" class="btc">
+        <card class="asset-info">
+          <div class="title">
+            <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg" width="15%">
+            <h1>Bitcoin</h1>
+          </div>
+          <div class="details">
+            <h2 class="asset-price" id="btcPrice"></h2>
+          </div>
+        </card>
+        <canvas id="btcChart"></canvas>
+      </div>
+
+      <!--Ethereum Card-->
+      <div style="width: 30%" class="ethereum">
+        <card class="asset-info">
+          <div class="title">
+            <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg" width="10%">
+            <h1>Ethereum</h1>
+          </div>
+          <div class="details">
+            <h2 class="asset-price" id="ethPrice"></h2>
+          </div>
+        </card>
+        <canvas id="ethereumChart"></canvas>
+      </div>
+      <!--LinkCard-->
+      <div style="width: 30%" class="link">
+        <card class="asset-info">
+          <div class="title">
+            <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/link.svg" width="10%">
+            <h1>Link</h1>
+          </div>
+          <div class="details">
+            <h2 class="asset-price" id="linkPrice"></h2>
+          </div>
+        </card>
+        <canvas id="linkChart"></canvas>
+      </div>
+      <div style="width: 30%" class="dot">
+        <card class="asset-info">
+          <div class="title">
+            <img src="https://www.cryptocompare.com/media/37072130/dot.png" height="10%" width="10%">
+            <h1>Dot</h1>
+          </div>
+          <div class="details">
+            <h2 class="asset-price" id="dotPrice"></h2>
+          </div>
+        </card>
+        <canvas id="dotChart"></canvas>
+      </div>
+    </cards>
+  </container>
+</div>
+<!-- Scripting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/members.js"></script>
